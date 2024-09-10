@@ -1,0 +1,246 @@
+version=54;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=7;
+	};
+	class Camera
+	{
+		pos[]={14700.373,20.381817,16724.891};
+		dir[]={-0.45304507,-0.75197881,0.47882992};
+		up[]={-0.51681864,0.65918726,0.54623318};
+		aside[]={0.72639436,-1.4901161e-008,0.68727821};
+	};
+};
+binarizationWanted=0;
+sourceName="taxi";
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Air_F_Heli_Light_01",
+	"A3_Characters_F_AoW"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Air_F";
+			name="Arma 3 Alpha - Aircraft";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Characters_F_AoW";
+			name="Arma 3 Art of War - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+dlcs[]=
+{
+	"AoW"
+};
+randomSeed=520914;
+class ScenarioData
+{
+	author="huntpab1";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=3;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14780.765,17.911438,16820.021};
+						angles[]={0,2.3254242,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						name="taxiD";
+					};
+					id=2;
+					type="B_Helipilot_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14780.765,19.690582,16820.023};
+						angles[]={0,2.3254242,0};
+					};
+					side="West";
+					class Attributes
+					{
+					};
+					id=3;
+					type="B_Helipilot_F";
+					atlOffset=1.7791443;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=2;
+						item1=1;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=3;
+						item1=1;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14780.765,19.689144,16819.973};
+				angles[]={0,2.3254242,0};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				name="taxi";
+			};
+			id=1;
+			type="B_Heli_Light_01_F";
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14276.97,17.851439,15814.032};
+						angles[]={0,0.68937016,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="myPlayer";
+						isPlayer=1;
+					};
+					id=5;
+					type="B_Officer_Parade_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6;
+		};
+	};
+};
