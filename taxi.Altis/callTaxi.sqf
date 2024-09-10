@@ -1,6 +1,6 @@
 _myPlayer = player;
 
-_actionID = _myPlayer addAction ["Call Taxi", {
+_actionID = _myPlayer addAction ["Call Taxi- cost: 20,000", {
     params ["_target", "_caller", "_actionID"];
 
     _caller removeAction _actionID;
